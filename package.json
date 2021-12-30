@@ -1,0 +1,9 @@
+{
+  "name": "@artsy/address_helper",
+  "version": "0.1.0",
+  "description": "A simple module for handling addresses and co-locating address data",
+  "main": "package/index.js",
+  "repository": "https://github.com/artsy/address_helper.git",
+  "author": "Chung-Yi Chi <chung-yi@artsymail.com>",
+  "license": "MIT"
+}
