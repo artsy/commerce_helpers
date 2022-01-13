@@ -3,9 +3,7 @@
 require 'address_helper/version'
 
 module AddressHelper
-  # Sourced from https://www.uscib.org/value-added-tax-rates-vat-by-country
-  COUNTRIES_WITH_VAT = %w[AD AE AL AT AU AW BE BG BR BW BY CA CH CI CL CN CW CY CZ DE DK DZ EE ES FI FO FR GB GG GI GP
-                          GR HK HR HU ID IE IL IM IN IS IT JE JP KR KZ LB LI LK LS LT LU LV MA MC MD ME MG MK MN MQ MT
-                          MU MX MY NA NC NL NO NZ PK PL PR PT RO RS RU SE SG SI SK SN SZ TH TN TR TW UA VN WF YT ZA]
-                       .freeze
+  COUNTRIES_REQUIRING_VAT = %w[AT BE CH CZ DE DK EE ES FI FR GB GR IE IT LT LU LV NL NO PL PT SE SI SK].freeze
+  COUNTRIES_IN_CONTINENTAL_EUROPE = %w[AD AM AT AZ BA BE BG BY CH CY CZ DE DK EE ES FI FR GE HR HU IT KZ LI LT LU LV MC
+                                       MD ME MK NL NO PL PT RO RS RU SE SI SK SM TR UA VA].freeze
 end

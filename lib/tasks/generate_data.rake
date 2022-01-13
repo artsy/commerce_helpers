@@ -8,7 +8,8 @@ namespace :address_helper do
   task :generate_data do
     File.open('package/data/data.json', 'w') do |f|
       data = {
-        COUNTRIES_WITH_VAT: AddressHelper::COUNTRIES_WITH_VAT
+        COUNTRIES_REQUIRING_VAT: AddressHelper::COUNTRIES_REQUIRING_VAT,
+        COUNTRIES_IN_CONTINENTAL_EUROPE: AddressHelper::COUNTRIES_IN_CONTINENTAL_EUROPE
       }
 
       f.write(JSON.pretty_generate(data))
