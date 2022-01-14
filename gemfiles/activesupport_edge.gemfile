@@ -8,7 +8,4 @@ git 'https://github.com/rails/rails.git', branch: 'main' do
   gem 'activesupport', require: 'active_support'
 end
 
-gem 'rake', '~> 12.0'
-gem 'rspec', '~> 3.0'
-
 gemspec path: '../'
