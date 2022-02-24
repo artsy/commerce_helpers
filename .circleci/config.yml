@@ -14,8 +14,20 @@ references:
     run:
       name: Run test suite
       command: bundle exec rake
+  check_data_drift: &check_data_drift
+    run:
+      name: Check data drift
+      command: ./bin/check_data_drift.sh
 
 jobs:
+  check_data_drift:
+    docker:
+      - image: cimg/ruby:2.7
+    steps:
+      - checkout
+      - <<: *bundle
+      - <<: *check_data_drift
+
   test:
     docker:
       - image: "cimg/ruby:<< parameters.ruby_version >>"
@@ -35,6 +47,7 @@ jobs:
 workflows:
   default:
     jobs:
+      - check_data_drift
       - test:
           matrix:
             parameters:
