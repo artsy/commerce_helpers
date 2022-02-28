@@ -1,7 +1,9 @@
 {
   "COUNTRIES_REQUIRING_VAT": [
+    "AE",
     "AT",
     "BE",
+    "BG",
     "CH",
     "CZ",
     "DE",
@@ -12,15 +14,18 @@
     "FR",
     "GB",
     "GR",
+    "HU",
     "IE",
     "IT",
     "LT",
     "LU",
     "LV",
+    "MT",
     "NL",
     "NO",
     "PL",
     "PT",
+    "RO",
     "SE",
     "SI",
     "SK"
