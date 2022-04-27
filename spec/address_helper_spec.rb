@@ -27,6 +27,7 @@ RSpec.describe AddressHelper do
         'Lithuania',
         'Luxembourg',
         'Malta',
+        'Mexico',
         'Netherlands',
         'Norway',
         'Poland',
