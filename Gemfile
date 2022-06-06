@@ -2,5 +2,5 @@
 
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in address_helper.gemspec
+# Specify your gem's dependencies in commerce_helpers.gemspec
 gemspec

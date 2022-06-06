@@ -1,9 +1,9 @@
 {
-  "name": "@artsy/address_helper",
+  "name": "@artsy/commerce_helpers",
   "version": "0.1.0",
-  "description": "A simple module for handling addresses and co-locating address data",
+  "description": "A simple module for handling commerce-related tasks and data",
   "main": "package/index.js",
-  "repository": "https://github.com/artsy/address_helper.git",
+  "repository": "https://github.com/artsy/commerce_helpers.git",
   "author": "Chung-Yi Chi <chung-yi@artsymail.com>",
   "license": "MIT"
 }
