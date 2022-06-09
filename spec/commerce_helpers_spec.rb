@@ -2,13 +2,13 @@
 
 require 'countries'
 
-RSpec.describe AddressHelper do
+RSpec.describe CommerceHelpers do
   it 'has a version number' do
-    expect(AddressHelper::VERSION).not_to be nil
+    expect(CommerceHelpers::VERSION).not_to be nil
   end
 
   it 'has a list of countries requiring VAT' do
-    expect(AddressHelper::COUNTRIES_REQUIRING_VAT).to match_array(
+    expect(CommerceHelpers::COUNTRIES_REQUIRING_VAT).to match_array(
       [
         'Austria',
         'Belgium',
@@ -47,6 +47,6 @@ RSpec.describe AddressHelper do
   end
 
   it 'has a list of countries in continental Europe' do
-    expect(AddressHelper::COUNTRIES_IN_CONTINENTAL_EUROPE).not_to be_empty
+    expect(CommerceHelpers::COUNTRIES_IN_CONTINENTAL_EUROPE).not_to be_empty
   end
 end

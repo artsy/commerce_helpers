@@ -10,9 +10,9 @@ MSG_CLEAN="\n${GREEN}Ruby and JSON data are consistent.${NO_COLOR}"
 MSG_DRIFT="\n${RED}Ruby and JSON data are out-of-sync. If you updated the Ruby data, consider
 regenerating the JSON with the rake task and committing the change:
 
-    bundle exec rake address_helper:generate_data${NO_COLOR}"
+    bundle exec rake commerce_helpers:generate_data${NO_COLOR}"
 
-bundle exec rake address_helper:generate_data
+bundle exec rake commerce_helpers:generate_data
 
 if [ -z "$(git status --porcelain)" ]; then
   echo "$MSG_CLEAN"

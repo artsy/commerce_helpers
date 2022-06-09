@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'address_helper/version'
+require 'commerce_helpers/version'
 
-module AddressHelper
+module CommerceHelpers
   COUNTRIES_REQUIRING_VAT = %w[AE AT BE BG CH CZ DE DK EE ES FI FR GB GR HU IE IT LT LU LV MT MX NL NO PL PT RO SE SI
                                SK].freeze
   COUNTRIES_IN_CONTINENTAL_EUROPE = %w[AD AM AT AZ BA BE BG BY CH CY CZ DE DK EE ES FI FR GE HR HU IT KZ LI LT LU LV MC

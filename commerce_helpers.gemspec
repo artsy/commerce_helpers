@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative 'lib/address_helper/version'
+require_relative 'lib/commerce_helpers/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'address_helper'
-  spec.version       = AddressHelper::VERSION
+  spec.name          = 'commerce_helpers'
+  spec.version       = CommerceHelpers::VERSION
   spec.authors       = ['Chung-Yi Chi']
   spec.email         = ['chung-yi@artsymail.com']
 
-  spec.summary       = 'Address handling utility'
-  spec.description   = 'A simple module for handling addresses and co-locating address data'
-  spec.homepage      = 'https://github.com/artsy/address_helper'
+  spec.summary       = 'Helpers for handling common commerce tasks'
+  spec.description   = 'A simple module for handling commerce-related tasks and data'
+  spec.homepage      = 'https://github.com/artsy/commerce_helpers'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
 
