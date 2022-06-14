@@ -49,4 +49,8 @@ RSpec.describe CommerceHelpers do
   it 'has a list of countries in continental Europe' do
     expect(CommerceHelpers::COUNTRIES_IN_CONTINENTAL_EUROPE).not_to be_empty
   end
+
+  it 'has a list of countries in the European Union' do
+    expect(CommerceHelpers::COUNTRIES_IN_EUROPEAN_UNION).not_to be_empty
+  end
 end
