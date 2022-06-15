@@ -9,7 +9,8 @@ namespace :commerce_helpers do
     File.open('package/data/data.json', 'w') do |f|
       data = {
         COUNTRIES_REQUIRING_VAT: CommerceHelpers::COUNTRIES_REQUIRING_VAT,
-        COUNTRIES_IN_CONTINENTAL_EUROPE: CommerceHelpers::COUNTRIES_IN_CONTINENTAL_EUROPE
+        COUNTRIES_IN_CONTINENTAL_EUROPE: CommerceHelpers::COUNTRIES_IN_CONTINENTAL_EUROPE,
+        COUNTRIES_IN_EUROPEAN_UNION: CommerceHelpers::COUNTRIES_IN_EUROPEAN_UNION
       }
 
       f.write(JSON.pretty_generate(data))

@@ -49,4 +49,40 @@ RSpec.describe CommerceHelpers do
   it 'has a list of countries in continental Europe' do
     expect(CommerceHelpers::COUNTRIES_IN_CONTINENTAL_EUROPE).not_to be_empty
   end
+
+  it 'has a list of countries in the European Union' do
+    expect(CommerceHelpers::COUNTRIES_IN_EUROPEAN_UNION).to match_array(
+      %w[
+        Austria
+        Belgium
+        Bulgaria
+        Croatia
+        Cyprus
+        Czechia
+        Denmark
+        Estonia
+        Finland
+        France
+        Germany
+        Greece
+        Hungary
+        Ireland
+        Italy
+        Latvia
+        Lithuania
+        Luxembourg
+        Malta
+        Netherlands
+        Poland
+        Portugal
+        Romania
+        Slovakia
+        Slovenia
+        Spain
+        Sweden
+      ].map do |name|
+        ISO3166::Country.find_country_by_iso_short_name(name).alpha2
+      end
+    )
+  end
 end
