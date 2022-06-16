@@ -10,7 +10,8 @@ namespace :commerce_helpers do
       data = {
         COUNTRIES_REQUIRING_VAT: CommerceHelpers::COUNTRIES_REQUIRING_VAT,
         COUNTRIES_IN_CONTINENTAL_EUROPE: CommerceHelpers::COUNTRIES_IN_CONTINENTAL_EUROPE,
-        COUNTRIES_IN_EUROPEAN_UNION: CommerceHelpers::COUNTRIES_IN_EUROPEAN_UNION
+        COUNTRIES_IN_EUROPEAN_UNION: CommerceHelpers::COUNTRIES_IN_EUROPEAN_UNION,
+        COUNTRIES_WITH_ARTSY_SHIPPING: CommerceHelpers::COUNTRIES_WITH_ARTSY_SHIPPING
       }
 
       f.write(JSON.pretty_generate(data))

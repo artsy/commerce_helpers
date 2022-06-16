@@ -85,4 +85,44 @@ RSpec.describe CommerceHelpers do
       end
     )
   end
+
+  it 'has a list of countries that are supported by Artsy Shipping' do
+    expect(CommerceHelpers::COUNTRIES_WITH_ARTSY_SHIPPING).to match_array(
+      [
+        'Austria',
+        'Belgium',
+        'Bulgaria',
+        'Croatia',
+        'Cyprus',
+        'Czechia',
+        'Denmark',
+        'Estonia',
+        'Finland',
+        'France',
+        'Germany',
+        'Greece',
+        'Hungary',
+        'Ireland',
+        'Italy',
+        'Latvia',
+        'Lithuania',
+        'Luxembourg',
+        'Malta',
+        'Netherlands',
+        'Norway',
+        'Poland',
+        'Portugal',
+        'Romania',
+        'Slovakia',
+        'Slovenia',
+        'Spain',
+        'Sweden',
+        'Switzerland',
+        'United States of America',
+        'United Kingdom of Great Britain and Northern Ireland'
+      ].map do |name|
+        ISO3166::Country.find_country_by_iso_short_name(name).alpha2
+      end
+    )
+  end
 end

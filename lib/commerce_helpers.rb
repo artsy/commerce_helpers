@@ -9,4 +9,6 @@ module CommerceHelpers
                                        MD ME MK NL NO PL PT RO RS RU SE SI SK SM TR UA VA].freeze
   COUNTRIES_IN_EUROPEAN_UNION = %w[AT BE BG CY CZ DE DK EE ES FI FR GR HR HU IE IT LT LU LV MT NL PL PT RO SE SI SK]
                                 .freeze
+  COUNTRIES_WITH_ARTSY_SHIPPING = %w[US GB CH NO] + COUNTRIES_IN_EUROPEAN_UNION
+                                  .freeze
 end
