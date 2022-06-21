@@ -138,5 +138,10 @@
     "SE",
     "SI",
     "SK"
+  ],
+  "CURRENCIES_SUPPORTED_IN_COMMERCE": [
+    "EUR",
+    "GBP",
+    "USD"
   ]
 }

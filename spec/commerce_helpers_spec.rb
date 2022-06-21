@@ -125,4 +125,10 @@ RSpec.describe CommerceHelpers do
       end
     )
   end
+
+  it 'has a list of currencies supported in commerce transactions' do
+    expect(CommerceHelpers::CURRENCIES_SUPPORTED_IN_COMMERCE).to match_array(
+      %w[EUR GBP USD]
+    )
+  end
 end
