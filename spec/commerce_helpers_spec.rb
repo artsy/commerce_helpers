@@ -126,6 +126,55 @@ RSpec.describe CommerceHelpers do
     )
   end
 
+  it 'has a list of countries that are supported by Stripe SEPA' do
+    expect(CommerceHelpers::COUNTRIES_WITH_SEPA).to match_array(
+      [
+        'Australia',
+        'Canada',
+        'Gibraltar',
+        'Hong Kong',
+        'Japan',
+        'Liechtenstein',
+        'Mexico',
+        'New Zealand',
+        'Norway',
+        'Singapore',
+        'Switzerland',
+        'United Kingdom of Great Britain and Northern Ireland',
+        'United States of America',
+        'Austria',
+        'Belgium',
+        'Bulgaria',
+        'Cyprus',
+        'Czechia',
+        'Germany',
+        'Denmark',
+        'Estonia',
+        'Spain',
+        'Finland',
+        'France',
+        'Greece',
+        'Croatia',
+        'Hungary',
+        'Ireland',
+        'Italy',
+        'Lithuania',
+        'Luxembourg',
+        'Latvia',
+        'Malta',
+        'Netherlands',
+        'Poland',
+        'Portugal',
+        'Romania',
+        'Sweden',
+        'Slovenia',
+        'Slovakia'
+      ].map do |name|
+        ISO3166::Country.find_country_by_iso_short_name(name).alpha2
+      end
+    )
+  end
+
   it 'has a list of currencies supported in commerce transactions' do
     expect(CommerceHelpers::CURRENCIES_SUPPORTED_IN_COMMERCE).to match_array(
       %w[EUR GBP USD]

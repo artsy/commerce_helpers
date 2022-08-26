@@ -11,6 +11,8 @@ module CommerceHelpers
                                 .freeze
   COUNTRIES_WITH_ARTSY_SHIPPING = %w[US GB CH NO] + COUNTRIES_IN_EUROPEAN_UNION
                                   .freeze
+  COUNTRIES_WITH_SEPA = %w[AU CA GI HK JP LI MX NZ NO SG CH GB US] + COUNTRIES_IN_EUROPEAN_UNION
+                        .freeze
 
   CURRENCIES_SUPPORTED_IN_COMMERCE = %w[EUR GBP USD].freeze
 end
