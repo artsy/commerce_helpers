@@ -143,5 +143,6 @@
     "EUR",
     "GBP",
     "USD"
-  ]
+  ],
+  "ARTSY_SHIPPING_PRICE_LIMIT": 750000
 }

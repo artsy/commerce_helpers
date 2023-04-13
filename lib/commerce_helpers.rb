@@ -15,4 +15,5 @@ module CommerceHelpers
                         .freeze
 
   CURRENCIES_SUPPORTED_IN_COMMERCE = %w[EUR GBP USD].freeze
+  ARTSY_SHIPPING_PRICE_LIMIT = 750_000
 end

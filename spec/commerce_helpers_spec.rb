@@ -180,4 +180,8 @@ RSpec.describe CommerceHelpers do
       %w[EUR GBP USD]
     )
   end
+
+  it 'has a price limit that is supported by Artsy shipping' do
+    expect(CommerceHelpers::ARTSY_SHIPPING_PRICE_LIMIT).to eq 750_000
+  end
 end
